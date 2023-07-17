@@ -5,11 +5,6 @@ import RightLogo from "../image/Compnnay-Logo.png";
 function Footer() {
   return (
     <div>
-      <div className="small-footer">
-        <p>
-          <b>OPEN: </b>MONDAY-SUNDAY 10AM-10PM 
-        </p>
-      </div>
       <div className="footer-container">
         <div className="footer-image-container">
           <img className="footer-image" src={logo} alt="logo" />
