@@ -13,8 +13,6 @@ function Main() {
       <Header />
       <MenuExternalEventCreating />
       {/* <Menu /> */}
-      <TakeOutDeliveryComponent />
-      <MachineInfoComponent />
       <FoodDetails />
       <Footer />
     </div>
