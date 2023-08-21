@@ -35,7 +35,10 @@
 }
 
 /* list style */
+.foodNameContainer{
 
+}
+.food-name
 .details-container {
   overflow: hidden;
   width: 100vw;
@@ -86,6 +89,12 @@
 .details-header {
   margin-bottom: 1rem;
   font-size: medium;
+  background-color:rgb(253, 112, 18);
+  color: white;
+  height:5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list-item {

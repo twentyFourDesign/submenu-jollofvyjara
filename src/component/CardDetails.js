@@ -31,6 +31,7 @@ const List = ({ items, title }) => {
           items?.map((item)=>{
             return(
               <div className="childMenu" onClick={() => handleItemClick(item)}>
+                
                 <p className="food-name">{item?.title}</p>
                 <div className="hr-parent">
                   <hr className="hrTag"/>
