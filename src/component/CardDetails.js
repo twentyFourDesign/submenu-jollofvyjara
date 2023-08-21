@@ -25,7 +25,7 @@ const List = ({ items, title }) => {
 
   return (
     <div className="details-container">
-      <h1 className="details-header">{title}</h1>
+      <h1 className="details-header">Ask our team if you'd like suggestions!</h1>
       <div className="menuItems">
         {
           items?.map((item)=>{

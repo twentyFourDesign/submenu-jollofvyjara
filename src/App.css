@@ -13,7 +13,7 @@
   margin: auto;
   display: flex;
   align-items: center;
-  background-color: #DC4D01;
+  background-color:rgb(253, 112, 18);  
   color: white;
   justify-content: center;
   padding-left: 50px;
@@ -88,13 +88,16 @@
 
 .details-header {
   margin-bottom: 1rem;
-  font-size: medium;
+  font-size: 2rem;
   background-color:rgb(253, 112, 18);
   color: white;
-  height:5rem;
+  /* height:5rem; */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  padding: 1rem;
 }
 
 .list-item {
