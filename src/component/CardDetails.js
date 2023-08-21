@@ -22,11 +22,6 @@ const List = ({ items, title }) => {
       document.body.style.overflow = "auto";
     }
   }, [openModal]);
-  console.log(selectedData)
-  console.log(selectedData?.title,"title")
-  console.log(selectedData?.image,"image")
-  console.log(selectedData?.price,"price")
-  console.log(selectedData?.description,"description")
 
   return (
     <div className="details-container">

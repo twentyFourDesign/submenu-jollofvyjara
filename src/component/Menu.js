@@ -55,12 +55,6 @@ export default function Menu() {
   }
   return (
     <div className="testing">
-      <Masonry
-      autoArrange={true}
-        breakpoints={breakpoints}
-        columns={{ mobile: 1, tablet: 2, desktop: 3 }}
-        gap={{ mobile: 20, tablet: 30, desktop: 40 }}
-      >
         {menu?.length ? (
           menu?.map((item , idx) => (
             <CardDetails title={item.title} items={item.data} key={idx} />
@@ -68,7 +62,6 @@ export default function Menu() {
         ) : (
           <h2 className="data-notfound">Menu Not Found</h2>
         )}
-      </Masonry>
     </div>
   );
 }

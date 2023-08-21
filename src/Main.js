@@ -12,7 +12,7 @@ function Main() {
     <div>
       <Header />
       <MenuExternalEventCreating />
-      {/* <Menu /> */}
+      <Menu />
       <FoodDetails />
       <Footer />
     </div>
