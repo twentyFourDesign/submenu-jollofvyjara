@@ -91,7 +91,6 @@
   font-size: 2rem;
   background-color:rgb(253, 112, 18);
   color: white;
-  /* height:5rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +98,11 @@
   text-transform: uppercase;
   padding: 1rem;
 }
-
+@media only screen and (max-width:463px){
+  .details-header{
+    font-size: 1.5rem; 
+  }
+}
 .list-item {
   display: flex;
   flex-direction: row;
