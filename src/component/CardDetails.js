@@ -72,27 +72,3 @@ const List = ({ items, title }) => {
 };
 
 export default List;
-
-
-{/* <div className="list-container">
-<Masonry
-  autoArrange={true}
-  breakpoints={breakpoints}
-  columns={{ mobile: 1, tablet: 2, desktop: 3 }}
-  gap={{ mobile: 20, tablet: 30, desktop: 40 }}
->
-  {items?.map((item, index) => (
-    <div
-      key={index}
-      className="list-item"
-      onClick={() => handleItemClick(item)}
-    >
-      <div className="item-name">{item.title}</div>
-      <div className="item-line">
-        <hr></hr>
-      </div>
-      <div className="item-price">{item.price.toLocaleString()}</div>
-    </div>
-  ))}
-  </Masonry>
-</div> */}

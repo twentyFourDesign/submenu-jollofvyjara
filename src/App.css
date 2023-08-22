@@ -8,16 +8,13 @@
 }
 
 .header-container {
-  max-width: 1440px;
-  height: 337px;
-  margin: auto;
+  width: 100vw;
+  height: 20rem;
   display: flex;
   align-items: center;
   background-color:rgb(253, 112, 18);  
   color: white;
   justify-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .image-container {
@@ -34,47 +31,36 @@
   height: 160px;
 }
 
-/* list style */
-.foodNameContainer{
-
-}
-.food-name
-.details-container {
+.food-name .details-container {
   overflow: hidden;
   width: 100vw;
 }
 
-/* .list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-} */
 .menuItems{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .childMenu{
   display: flex; 
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
   width: 20rem;
-  height: 4rem;
   cursor: pointer;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  
 }
 
 .hrTag{
-  width: 5rem;
+  width: 3rem;
   border-color: black
 }
 .food-name{
-  width: 10rem; /* Set a fixed or maximum width */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 10rem;
+  white-space: wrap;
 }
 
 
@@ -86,7 +72,7 @@
 }
 
 .details-header {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
   background-color:rgb(253, 112, 18);
   color: white;
@@ -178,20 +164,20 @@
 }
 
 .testing>div {
-  gap: 25px;
-  width: 90%;
-  margin: auto;
-  justify-content: center;
+  width: 100vw;
+  padding:10px;
 }
-
+/* 
 .testing>div>div {
   flex: none !important;
 }
 
 .testing>div>div>div {
   padding-top: 0px !important;
-}
+} */
 
+
+/* HEADER STYLING  */
 .menu {
   font-style: normal;
   font-weight: 400;
