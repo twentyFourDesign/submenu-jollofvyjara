@@ -5,7 +5,6 @@
     padding: 1rem;
     background-color: white;
 }
-
 .footercontainer .logo-left{
     width: 5rem;
     height: 5rem;
@@ -20,6 +19,32 @@
     flex-direction: column;
 }
 
+@media only screen and (max-width:620px) {
+    .footercontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo-left{
+        margin-bottom: 10px;
+    }
+    .c-de{
+        margin-bottom: 10px;
+    }
+    .right-logo{
+        margin-bottom: 10px;
+    }
+    .year{
+        margin-bottom: 10px;
+    }
+    .own{
+        margin-bottom: 10px;
+    }
+    .rc{
+        margin-bottom: 10px;
+    }
+}
 @media only screen and (max-width:946px) {
     .footercontainer{
         margin-top: 12rem;

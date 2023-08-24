@@ -49,7 +49,7 @@ const List = ({ items, title }) => {
         <div className="popup">
           <div className="popup-inner">
             <div className="popup-header">
-              <p className="deatils">Deatils</p>
+              <p className="deatils">Details</p>
               <button className="popup-close" onClick={handleClose}>
                 &times;
               </button>
