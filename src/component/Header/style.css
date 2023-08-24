@@ -1,0 +1,57 @@
+.header{
+    background-color: #A8A8A833;
+    margin-top: 5.3rem;
+    width: 100vw;
+}
+.headerimg{
+    width: 100vw;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img{
+    width: 9rem;
+    height: 9rem;
+    margin-top: -13%;
+}
+@media only screen and (max-width:781px) {
+    .logo-container img{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.header-text{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-text h1{
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+@media only screen and (max-width:481px) {
+    .header-text h1{
+        font-size: 1.3rem;
+    }
+}
+.header-text p{
+    color: #FD7012;
+    margin-bottom: 1rem;
+}
+
+.header-text button{
+    background-color: rgba(168, 168, 168, 0.20);
+    width: 16rem;
+    height: 2.3rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}

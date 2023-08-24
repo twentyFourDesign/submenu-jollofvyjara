@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import CardDetails from "./CardDetails";
+import CardDetails from "./Product/CardDetails";
 
 import Masonry from "react-smart-masonry";
 import useWindowWidth from "./width";

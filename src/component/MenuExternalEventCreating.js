@@ -1,9 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import useWindowWidth from "./width";
-import CardDetails from "./CardDetails";
+import CardDetails from "./Product/CardDetails";
 
-import Masonry from "react-smart-masonry";
-const breakpoints = { mobile: 600, tablet: 700, desktop: 1100 };
 
 export default function MenuExternalEventCreating() {
   const [menu, setMenu] = useState([]);
@@ -68,18 +66,11 @@ export default function MenuExternalEventCreating() {
   }
   return (
     <div className="testing">
-      {/* <Masonry
-        autoArrange={true}
-        breakpoints={breakpoints}
-        columns={{ mobile: 1, tablet: 1, desktop: 1 }}
-        gap={{ mobile: 20, tablet: 30, desktop: 40 }}
-      > */}
         {filteredMenu ? (
           <CardDetails title={filteredMenu?.title} items={filteredMenu?.data} />
         ) : (
           <h2 className="data-notfound">Menu Not Found</h2>
         )}
-      {/* </Masonry> */}
     </div>
   );
 }

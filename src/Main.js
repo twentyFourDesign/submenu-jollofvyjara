@@ -1,15 +1,16 @@
 import React from "react";
-import FoodDetails from "./component/FoodDetails";
-import Footer from "./component/Footer";
-import Header from "./component/Header";
+import Card from "./component/Card/Card";
+import Footer from "./component/Footer/Footer";
 import MenuExternalEventCreating from "./component/MenuExternalEventCreating";
-
+import Navbar from "./component/Navbar/Navbar";
+import Header from './component/Header/Header'
 function Main() {
   return (
     <div>
-      <Header />
+      <Navbar/>
+      <Header/>
       <MenuExternalEventCreating />
-      <FoodDetails />
+      <Card/>
       <Footer />
     </div>
   );

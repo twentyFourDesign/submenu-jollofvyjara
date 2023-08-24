@@ -1,0 +1,94 @@
+.cardcontainer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #A8A8A833;
+}
+.main-card{
+    display: flex;
+    align-items: center;
+}
+.firstcardcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.firstcardcontainer img{
+    width: 25rem;
+    margin-top: 3rem;
+    margin-right: -7rem;
+}
+.secondcardcontainer{
+    border-radius: 24px;
+    background-color: #FD7012;
+    color: white;
+    width: 40rem;
+    padding: 2rem;
+    z-index: -1;
+    position: relative;
+}
+.secondcardcontainer img{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 4rem;
+}
+.secondcardcontainer .heading{
+    margin-bottom: 1rem;
+    margin-left:4rem;
+}
+.secondcardcontainer .little{
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
+.secondcardcontainer .large{
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
+.secondcardcontainer .layer{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    height: 10rem;
+    width: 10rem;
+}
+
+
+@media only screen and (max-width:946px){
+    .cardcontainer{
+        display: block;
+    }
+    .mainsecondcard{
+       width: 100vw; 
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .secondcardcontainer{
+        width: 95%;
+        padding: 0rem;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    }  
+    .cardcontainer{
+        position: relative;
+    }
+    .firstcardcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        position: absolute;
+        bottom: -10rem;
+        margin-left: -2rem;
+    }
+    .firstcardcontainer img{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 6rem;
+    }
+}
