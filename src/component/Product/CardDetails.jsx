@@ -30,8 +30,8 @@ const List = ({ items, title }) => {
               <div className="singleProduct" onClick={() => handleItemClick(item)}>
 
                 <div className="subsingle">
-                  <p className="menu">Menu Food Item</p>
-                  <p className="name">{item?.title?.split(" - ")[0]}</p>
+                  {/* <p className="menu">Menu Food Item</p> */}
+                  <p className="name" style={{marginTop:"2rem"}}>{item?.title?.split(" - ")[0]}</p>
                   <hr className="hr" />
 
                   <div className="descprice">
@@ -45,6 +45,8 @@ const List = ({ items, title }) => {
           })
         }
       </div>
+
+
       {openModal && (
         <div className="popup">
           <div className="popup-inner">
