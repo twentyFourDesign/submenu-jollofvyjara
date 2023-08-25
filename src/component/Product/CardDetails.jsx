@@ -26,16 +26,24 @@ const List = ({ items, title }) => {
       <div className="productItems">
         {
           items?.map((item) => {
+            let splitTitle = item?.title?.split(" - ");
+            let firstPart = splitTitle[1];
+
+            if (!firstPart.endsWith(')')) {
+              firstPart += ')';
+            }
+
+            const formattedTitle = `${firstPart}`;
             return (
               <div className="singleProduct" onClick={() => handleItemClick(item)}>
 
                 <div className="subsingle">
                   {/* <p className="menu">Menu Food Item</p> */}
-                  <p className="name" style={{marginTop:"2rem"}}>{item?.title?.split(" - ")[0]}</p>
+                  <p className="name" style={{ marginTop: "2rem" }}>{item?.title?.split(" - ")[0]}</p>
                   <hr className="hr" />
 
                   <div className="descprice">
-                    <p className="name">{item?.title?.split(" - ")[1]}</p>
+                    <p className="name">{formattedTitle}</p>
                     <p className="price">{item?.price?.toLocaleString()}</p>
                   </div>
 
@@ -47,42 +55,59 @@ const List = ({ items, title }) => {
       </div>
 
 
-      {openModal && (
-        <div className="popup">
-          <div className="popup-inner">
-            <div className="popup-header">
-              <p className="deatils">Details</p>
-              <button className="popup-close" onClick={handleClose}>
-                &times;
-              </button>
-            </div>
-            <div className="popup-content">
-              <div className="popup-description">
-                <div className="selected-list-container">
-                  <img
-                    src={Image}
-                    className="select-item-image"
-                    alt={selectedData?.title}
-                  />
-                  <p className="food-description">{selectedData?.description}</p>
-                </div>
+      {openModal
 
+        && (
+          <div className="popup">
+            <div className="popup-inner">
+              <div className="popup-header">
+                <p className="deatils">Details</p>
+                <button className="popup-close" onClick={handleClose}>
+                  &times;
+                </button>
               </div>
-              <div className="singlepopupd">
+              <div className="popup-content">
+                <div className="popup-description">
+                  <div className="selected-list-container">
+                    <img
+                      src={Image}
+                      className="select-item-image"
+                      alt={selectedData?.title}
+                    />
+                    <p className="food-description">{selectedData?.description}</p>
+                  </div>
+
+                </div>
+                <div className="singlepopupd">
                   <p className="menu-popup">Menu Food Item</p>
                   <h1 className="name-popup">{selectedData?.title?.split(" - ")[0]}</h1>
                   <hr />
                   <div className="dpp">
-                    <h3 className="desc-popup">{selectedData?.title?.split(" - ")[1]}</h3>
+                    {(() => {
+                      let splitTitle = selectedData?.title?.split(" - ");
+                      let firstPart = splitTitle[1];
+
+                      if (!firstPart.endsWith(')')) {
+                        firstPart += ')';
+                      }
+
+                      const formattedTitle = `${firstPart}`;
+
+                      return (
+                        <h1 className="name-popup" style={{fontSize:"1rem"}}>
+                          {formattedTitle}
+                        </h1>
+                      );
+                    })()}
                     <div className="popup-price">Price: {selectedData?.price?.toLocaleString()}</div>
                   </div>
                   <hr />
-                  
-              </div>            
+
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
     </div>
   );
 };
