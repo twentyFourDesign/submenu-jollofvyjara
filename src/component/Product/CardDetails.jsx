@@ -36,7 +36,7 @@ const List = ({ items, title }) => {
 
                   <div className="descprice">
                     <p className="name">{item?.title?.split(" - ")[1]}</p>
-                    <p className="price">{item?.price}</p>
+                    <p className="price">{item?.price?.toLocaleString()}</p>
                   </div>
 
                 </div>
