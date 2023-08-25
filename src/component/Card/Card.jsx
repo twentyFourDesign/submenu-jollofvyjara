@@ -7,7 +7,6 @@ const Card = () => {
   return (
 
     <div className='main-card'>
-
       <div className='cardcontainer'>
         <div className='firstcardcontainer'>
           <img src={Footer} alt="" />
