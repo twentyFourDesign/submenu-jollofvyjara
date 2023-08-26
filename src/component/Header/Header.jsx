@@ -14,7 +14,9 @@ const Header = () => {
       <div className='header-text'>
         <h1>Menu for external event catering </h1>
         <p>(24hrs notice required)</p>
-        <button>Ask our team if you’d like suggestions!</button>
+        <a href="http://www.jollofbyjara.com" target='_blank'>
+          <button>Ask our team if you’d like suggestions!</button>
+        </a>
       </div>
     </div>
   )

@@ -3,7 +3,7 @@ import './style.css'
 import image from '../../image/Jollof by Jara 1.png'
 import { BsInstagram } from 'react-icons/bs'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import {AiFillMessage} from 'react-icons/ai'
+import { AiFillMessage } from 'react-icons/ai'
 import { useState } from 'react'
 const Navbar = () => {
     const [showMenu, setshowMenu] = useState(false)
@@ -21,12 +21,31 @@ const Navbar = () => {
 
                 <div className='links'>
                     <p>Home</p>
-                    <p>About</p>
-                    <p>Food</p>
-                    <p>Drinks</p>
-                    <p>Children</p>
-                    <p>Booking</p>
-                    <p>Contact</p>
+
+                    <a href="https://www.jollofbyjara.com/about" target='_blank'>
+                        <p>About</p>
+                    </a>
+
+                    <a href="https://www.jollofbyjara.com/foodmenu" target='_blank'>
+                        <p>Food</p>
+                    </a>
+
+                    <a href="https://www.jollofbyjara.com/drink" target='_blank'>
+                        <p>Drinks</p>
+                    </a>
+
+                    <a href="https://www.jollofbyjara.com/childrensparties" target='_blank'>
+                        <p>Children</p>
+
+                    </a>
+
+                    <a href="https://www.jollofbyjara.com/bookings" target='_blank'>
+                        <p>Booking</p>
+                    </a>
+                    <a href="https://www.jollofbyjara.com" target='_blank'>
+                        <p>Contact</p>
+                    </a>
+
                     <BsInstagram className='insta' />
                     <AiFillMessage className='whatsapp' />
                 </div>
