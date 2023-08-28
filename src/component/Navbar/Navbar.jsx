@@ -12,42 +12,13 @@ const Navbar = () => {
             <div className='nav-container'>
 
                 <div className='img-container'>
-                    <img src={image} alt="" />
+                    <a href="http://www.jollofbyjara.com" target='_blank'>
+                        <img src={image} alt="" />
+                    </a>
                 </div>
 
                 <div className='tel'>
                     <p>Tel: +234 (0) 808 0610 290 / bookings@jollofbyjara.com</p>
-                </div>
-
-                <div className='links'>
-                    <p>Home</p>
-
-                    <a href="https://www.jollofbyjara.com/about" target='_blank'>
-                        <p>About</p>
-                    </a>
-
-                    <a href="https://www.jollofbyjara.com/foodmenu" target='_blank'>
-                        <p>Food</p>
-                    </a>
-
-                    <a href="https://www.jollofbyjara.com/drink" target='_blank'>
-                        <p>Drinks</p>
-                    </a>
-
-                    <a href="https://www.jollofbyjara.com/childrensparties" target='_blank'>
-                        <p>Children</p>
-
-                    </a>
-
-                    <a href="https://www.jollofbyjara.com/bookings" target='_blank'>
-                        <p>Booking</p>
-                    </a>
-                    <a href="https://www.jollofbyjara.com" target='_blank'>
-                        <p>Contact</p>
-                    </a>
-
-                    <BsInstagram className='insta' />
-                    <AiFillMessage className='whatsapp' />
                 </div>
 
                 <GiHamburgerMenu className='menu-burger' onClick={() => setshowMenu(!showMenu)} />
@@ -63,17 +34,6 @@ const Navbar = () => {
                                 <p>Tel: +234 (0) 808 0610 290 / bookings@jollofbyjara.com</p>
                             </div>
 
-                            <div className='links-res'>
-                                <p>Home</p>
-                                <p>About</p>
-                                <p>Food</p>
-                                <p>Drinks</p>
-                                <p>Children</p>
-                                <p>Booking</p>
-                                <p>Contact</p>
-                                <BsInstagram className='insta-res' />
-                                <AiFillMessage className='whatsapp-res' />
-                            </div>
                         </div>
                     </div>
                     : ""

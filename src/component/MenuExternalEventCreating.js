@@ -10,7 +10,7 @@ export default function MenuExternalEventCreating() {
 
   const [loading, setLoading] = useState(false);
   const currWidth = useWindowWidth();
-
+  console.log(filteredMenu)
   const fixCard = (data) => {
     setMenu1(data);
     const arry = [...data];

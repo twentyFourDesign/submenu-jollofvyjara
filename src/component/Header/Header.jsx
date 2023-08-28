@@ -8,7 +8,9 @@ const Header = () => {
     <div className='header'>
       <img src={headerImage} alt="" className='headerimg'/>
       <div className='logo-container'>
-        <img src={image} alt="" className='logo' />
+        <a href="http://www.jollofbyjara.com" target='_blank'>
+          <img src={image} alt="" className='logo' />
+        </a>
       </div>
 
       <div className='header-text'>

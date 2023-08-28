@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './style.css'
 import Image from '../../image/deatil.png'
 const List = ({ items, title }) => {
+  console.log(items)
   const [openModal, setOpenModal] = useState(false);
   const [selectedData, setSelectedData] = useState({});
   const handleItemClick = (item) => {
@@ -38,7 +39,6 @@ const List = ({ items, title }) => {
               <div className="singleProduct" onClick={() => handleItemClick(item)}>
 
                 <div className="subsingle">
-                  {/* <p className="menu">Menu Food Item</p> */}
                   <p className="name" style={{ marginTop: "2rem" }}>{item?.title?.split(" - ")[0]}</p>
                   <hr className="hr" />
 
