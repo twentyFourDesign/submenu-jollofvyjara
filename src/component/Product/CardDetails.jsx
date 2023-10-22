@@ -87,7 +87,7 @@ const List = ({ items, title }) => {
                       let splitTitle = selectedData?.title?.split(" - ");
                       let firstPart = splitTitle[1];
 
-                      if (!firstPart.endsWith(')')) {
+                      if (!firstPart?.endsWith(')')) {
                         firstPart += ')';
                       }
 
