@@ -29,8 +29,7 @@ const List = ({ items, title }) => {
           items?.map((item) => {
             let splitTitle = item?.title?.split(" - ");
             let firstPart = splitTitle[1];
-
-            if (!firstPart?.endsWith(')')) {
+            if (firstPart!==undefined && !firstPart?.endsWith(')')) {
               firstPart += ')';
             }
 
@@ -43,7 +42,7 @@ const List = ({ items, title }) => {
                   <hr className="hr" />
 
                   <div className="descprice">
-                    <p className="name">{formattedTitle}</p>
+                    <p className="name">{formattedTitle==="undefined" ?"Family (4-6)" :formattedTitle}</p>
                     <p className="price">{item?.price?.toLocaleString()}</p>
                   </div>
 
@@ -87,7 +86,7 @@ const List = ({ items, title }) => {
                       let splitTitle = selectedData?.title?.split(" - ");
                       let firstPart = splitTitle[1];
 
-                      if (!firstPart?.endsWith(')')) {
+                      if (firstPart!==undefined && !firstPart?.endsWith(')')) {
                         firstPart += ')';
                       }
 
@@ -95,7 +94,7 @@ const List = ({ items, title }) => {
 
                       return (
                         <h1 className="name-popup" style={{fontSize:"1rem"}}>
-                          {formattedTitle}
+                          {formattedTitle==="undefined" ?"Family (4-6)" :formattedTitle}
                         </h1>
                       );
                     })()}
