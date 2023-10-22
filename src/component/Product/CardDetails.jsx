@@ -30,7 +30,7 @@ const List = ({ items, title }) => {
             let splitTitle = item?.title?.split(" - ");
             let firstPart = splitTitle[1];
 
-            if (!firstPart.endsWith(')')) {
+            if (!firstPart?.endsWith(')')) {
               firstPart += ')';
             }
 
