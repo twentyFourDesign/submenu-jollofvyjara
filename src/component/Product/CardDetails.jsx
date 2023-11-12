@@ -5,6 +5,7 @@ const List = ({ items, title }) => {
   console.log(items)
   const [openModal, setOpenModal] = useState(false);
   const [selectedData, setSelectedData] = useState({});
+  const [image, setImage] = useState(false)
   const handleItemClick = (item) => {
     setOpenModal(!openModal);
     setSelectedData(item);
@@ -29,7 +30,7 @@ const List = ({ items, title }) => {
           items?.map((item) => {
             let splitTitle = item?.title?.split(" - ");
             let firstPart = splitTitle[1];
-            if (firstPart!==undefined && !firstPart?.endsWith(')')) {
+            if (firstPart !== undefined && !firstPart?.endsWith(')')) {
               firstPart += ')';
             }
 
@@ -42,7 +43,7 @@ const List = ({ items, title }) => {
                   <hr className="hr" />
 
                   <div className="descprice">
-                    <p className="name">{formattedTitle==="undefined" ?"Family (4-6)" :formattedTitle}</p>
+                    <p className="name">{formattedTitle === "undefined" ? "Family (4-6)" : formattedTitle}</p>
                     <p className="price">{item?.price?.toLocaleString()}</p>
                   </div>
 
@@ -68,11 +69,13 @@ const List = ({ items, title }) => {
               <div className="popup-content">
                 <div className="popup-description">
                   <div className="selected-list-container">
-                    <img
-                      src={Image}
-                      className="select-item-image"
-                      alt={selectedData?.title}
-                    />
+                    
+                      <img
+                        src={selectedData.image}
+                        className="select-item-image"
+                        alt={selectedData?.title}
+                      />
+
                     <p className="food-description">{selectedData?.description}</p>
                   </div>
 
@@ -86,15 +89,15 @@ const List = ({ items, title }) => {
                       let splitTitle = selectedData?.title?.split(" - ");
                       let firstPart = splitTitle[1];
 
-                      if (firstPart!==undefined && !firstPart?.endsWith(')')) {
+                      if (firstPart !== undefined && !firstPart?.endsWith(')')) {
                         firstPart += ')';
                       }
 
                       const formattedTitle = `${firstPart}`;
 
                       return (
-                        <h1 className="name-popup" style={{fontSize:"1rem"}}>
-                          {formattedTitle==="undefined" ?"Family (4-6)" :formattedTitle}
+                        <h1 className="name-popup" style={{ fontSize: "1rem" }}>
+                          {formattedTitle === "undefined" ? "Family (4-6)" : formattedTitle}
                         </h1>
                       );
                     })()}
