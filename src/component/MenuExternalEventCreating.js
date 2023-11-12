@@ -66,11 +66,11 @@ export default function MenuExternalEventCreating() {
   }
   return (
     <div className="testing">
-        {filteredMenu ? (
-          <CardDetails title={filteredMenu?.title} items={filteredMenu?.data} />
-        ) : (
-          <h2 className="data-notfound">Menu Not Found</h2>
-        )}
+      {filteredMenu ? (
+        <CardDetails title={filteredMenu?.title} items={filteredMenu?.data} />
+      ) : (
+        <h2 className="data-notfound">Menu Not Found</h2>
+      )}
     </div>
   );
 }
