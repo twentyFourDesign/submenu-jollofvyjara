@@ -1,12 +1,14 @@
 import React from 'react'
 import './style.css'
-import headerImage from '../../image/header.png'
+import headerImage from '../../image/bg.jpg'
 import image from '../../image/Jollof by Jara 1.png'
 
 const Header = () => {
   return (
     <div className='header'>
-      <img src={headerImage} alt="" className='headerimg'/>
+      <div className="headerimgcontainer">
+        <img src={headerImage} alt="" className='headerimg' />
+      </div>
       <div className='logo-container'>
         <a href="http://www.jollofbyjara.com" target='_blank'>
           <img src={image} alt="" className='logo' />
