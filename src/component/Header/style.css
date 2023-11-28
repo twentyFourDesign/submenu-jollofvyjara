@@ -4,7 +4,22 @@
     width: 100vw;
 }
 .headerimg{
-    width: 100vw;
+    width: 73%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    transform: rotate(-90deg);
+}
+@media only screen and (max-width:851px) {
+    .headerimg{
+        width: 70%;  
+        margin-top:1rem;  
+    }
+}
+.headerimgcontainer{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo-container{
     display: flex;
