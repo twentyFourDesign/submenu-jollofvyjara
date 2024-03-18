@@ -7,11 +7,11 @@ import Header from './component/Header/Header'
 function Main() {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Header/>
-      <MenuExternalEventCreating />
+      {/* <MenuExternalEventCreating />
       <Card/>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

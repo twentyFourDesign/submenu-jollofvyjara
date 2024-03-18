@@ -1,15 +1,20 @@
 .header{
     background-color: #A8A8A833;
-    margin-top: 5.3rem;
+    margin-top: 0;
     width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .headerimg{
     width: 73%;
     margin-bottom: 2rem;
     border-radius: 10px;
     transform: rotate(-90deg);
+    cursor: pointer;
 }
-@media only screen and (max-width:851px) {
+/* @media only screen and (max-width:851px) {
     .headerimg{
         width: 70%;  
         margin-top:1rem;  
@@ -69,4 +74,4 @@
     cursor: pointer;
     border-radius: 1rem;
     margin-bottom: 1.5rem;
-}
+} */
